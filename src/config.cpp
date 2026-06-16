@@ -22,7 +22,7 @@ SceneConfig loadSceneConfig(const std::string& path) {
 
   if (j.contains("lighting")) {
     const auto& lighting = j["lighting"];
-    cfg.defaultShininess = lighting.value("defaultQ", 32.f);
+    cfg.defaultShininess = lighting.value("q", 50.f);
     for (const auto& light : lighting.at("sources")) {
       LightDef ld;
       ld.position = readVec3(light.at("position"));
