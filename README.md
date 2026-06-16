@@ -15,10 +15,11 @@ Base do projeto com cena **Vila Minecraft** (diorama):
 | Ghast | `ghast/scene.obj` | 1 | Órbita Catmull-Rom sobre a vila |
 | Happy Ghast | `happpy_ghast/scene.obj` | 4 | Pound (sobe/desce) |
 | Allay | `allay/scene.obj` | 2 | Trajetórias Catmull-Rom |
-| Allay | `allay/scene.obj` | 8 | Estáticos |
-| Ghast | `ghast/scene.obj` | 2 | Estáticos |
+| Allay | `allay/scene.obj` | 5 | Flutuação / loops locais |
+| Allay | `allay/scene.obj` | 3 | Estáticos |
+| Ghast | `ghast/scene.obj` | 2 | Patrulha nas bordas |
 
-**Total: 18 objetos na cena** (7 animados).
+**Total: 18 objetos na cena** — **14 animados (~82%)** entre os mobs adicionados.
 
 Implementado:
 
