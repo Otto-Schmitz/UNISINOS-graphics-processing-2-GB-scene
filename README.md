@@ -7,14 +7,28 @@ Visualizador de cenas 3D com OpenGL moderna, carregamento de múltiplos OBJs via
 
 ## Estado atual
 
-Base do projeto implementada com:
+Base do projeto com cena **Vila Minecraft** (diorama):
+
+| Elemento | Modelo | Qtd | Animação |
+|----------|--------|-----|----------|
+| Mapa | `village_map` | 1 | — |
+| Ghast | `ghast/scene.obj` | 1 | Órbita Catmull-Rom sobre a vila |
+| Happy Ghast | `happpy_ghast/scene.obj` | 4 | Pound (sobe/desce) |
+| Allay | `allay/scene.obj` | 2 | Trajetórias Catmull-Rom |
+| Allay | `allay/scene.obj` | 8 | Estáticos |
+| Ghast | `ghast/scene.obj` | 2 | Estáticos |
+
+**Total: 18 objetos na cena** (7 animados).
+
+Implementado:
 
 - Leitura de cena via `src/config.json`
 - Carregamento de OBJ com grupos (`g`/`o`), materiais `.mtl` e textura difusa
 - Iluminação de Phong com múltiplas fontes de luz
 - Câmera livre (WASD + mouse)
 - Skybox opcional de fundo
-- Cena inicial: mapa `village_map` (export Mineways/Minecraft)
+- Animação por curva **Catmull-Rom** (`src/catmull_rom.*`) com pontos de controle no JSON
+- Cena inicial: mapa `village_map` + mobs Minecraft (ghast, happy ghast, allay)
 
 ## Dependências (Ubuntu/Debian)
 
@@ -60,6 +74,5 @@ Os caminhos de `assets/`, `shaders/` e `src/config.json` são resolvidos em temp
 
 ## Próximos passos
 
-- Adicionar demais objetos do diorama (mínimo 15 na cena final)
-- Seleção e transformações (rotação, translação, escala)
-- Animação por curva paramétrica (Catmull-Rom ou Bézier)
+- Seleção e transformações (rotação, translação, escala) no objeto ativo
+- Controles adicionais (wireframe, projeção ortográfica)

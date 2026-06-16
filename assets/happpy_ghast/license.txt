@@ -1,0 +1,11 @@
+Model Information:
+* title:	Happpy ghast
+* source:	https://sketchfab.com/3d-models/happpy-ghast-c909acfa093d47d09e7673db5fec8c74
+* author:	soda616 (https://sketchfab.com/soda616)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Happpy ghast" (https://sketchfab.com/3d-models/happpy-ghast-c909acfa093d47d09e7673db5fec8c74) by soda616 (https://sketchfab.com/soda616) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

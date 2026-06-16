@@ -1,0 +1,11 @@
+Model Information:
+* title:	Minecraft Allay
+* source:	https://sketchfab.com/3d-models/minecraft-allay-48dbf33979d74e63917d88ea45dcee08
+* author:	GoodVessel92551 (https://sketchfab.com/GoodVessel92551)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Minecraft Allay" (https://sketchfab.com/3d-models/minecraft-allay-48dbf33979d74e63917d88ea45dcee08) by GoodVessel92551 (https://sketchfab.com/GoodVessel92551) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

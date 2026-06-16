@@ -6,6 +6,7 @@
 #include <glm/gtc/type_ptr.hpp>
 
 #include "camera.h"
+#include "catmull_rom.h"
 #include "config.h"
 #include "obj_loader.h"
 #include "paths.h"
@@ -13,6 +14,7 @@
 
 #include <algorithm>
 #include <iostream>
+#include <optional>
 #include <string>
 #include <vector>
 
@@ -26,6 +28,8 @@ struct SceneObject {
   glm::vec3 translation{0.f};
   glm::vec3 rotationDeg{0.f};
   glm::vec3 scale{1.f};
+  std::optional<AnimationDef> animation;
+  float animT = 0.f;
 };
 
 struct AppState {
@@ -290,6 +294,7 @@ int main() {
     sceneObj.translation = def.translation;
     sceneObj.rotationDeg = def.rotationDeg;
     sceneObj.scale = def.scale;
+    sceneObj.animation = def.animation;
     sceneObj.model = loadObjModel(root + "/" + def.filePath, config.defaultShininess);
     if (sceneObj.model.groups.empty()) {
       std::cerr << "Objeto sem geometria: " << def.filePath << "\n";
@@ -308,6 +313,13 @@ int main() {
     lastFrame = now;
 
     processInput(window, deltaTime);
+
+    for (SceneObject& obj : app.objects) {
+      if (obj.animation && obj.animation->controlPoints.size() >= 2) {
+        updateCatmullRomPosition(obj.animation->controlPoints, obj.animation->speed, deltaTime,
+                                 obj.animT, obj.translation);
+      }
+    }
 
     int width = 0, height = 0;
     glfwGetFramebufferSize(window, &width, &height);

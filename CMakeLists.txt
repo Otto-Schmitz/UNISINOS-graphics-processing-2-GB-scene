@@ -33,6 +33,7 @@ configure_file(
 add_executable(scene_viewer
   src/main.cpp
   src/camera.cpp
+  src/catmull_rom.cpp
   src/config.cpp
   src/obj_loader.cpp
   src/shader.cpp
