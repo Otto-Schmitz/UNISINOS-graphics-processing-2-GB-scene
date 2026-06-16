@@ -1,0 +1,36 @@
+{
+  "objects": [
+    {
+      "filePath": "assets/village_map/source/MAP_PVP_004_02.obj",
+      "translation": { "x": 0.0, "y": 0.0, "z": 0.0 },
+      "rotation": { "x": 0.0, "y": 0.0, "z": 0.0 },
+      "scale": { "x": 1.0, "y": 1.0, "z": 1.0 }
+    }
+  ],
+  "lighting": {
+    "defaultQ": 32.0,
+    "sources": [
+      {
+        "position": { "x": 60.0, "y": 90.0, "z": 40.0 },
+        "color": { "r": 255, "g": 248, "b": 235 },
+        "intensity": 1.0
+      },
+      {
+        "position": { "x": -20.0, "y": 50.0, "z": 80.0 },
+        "color": { "r": 180, "g": 210, "b": 255 },
+        "intensity": 0.35
+      }
+    ]
+  },
+  "camera": {
+    "position": { "x": 53.0, "y": 45.0, "z": 95.0 },
+    "yaw": -125.0,
+    "pitch": -22.0,
+    "speed": 18.0,
+    "frustum": {
+      "fov": 45.0,
+      "near": 0.1,
+      "far": 500.0
+    }
+  }
+}

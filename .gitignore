@@ -1,0 +1,12 @@
+build/
+*.o
+*.a
+*.so
+*.exe
+scene_viewer
+**/generated/paths.h
+.DS_Store
+.idea/
+.vscode/
+*.log
+*.pdf
